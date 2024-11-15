@@ -1,0 +1,68 @@
+/* Estilos CSS para el formulario y los resultados */
+body {
+background-size: cover;
+font-family: Arial, sans-serif;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightblue;
+   
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #45a049;
+}
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.hidden {
+    display: none;
+}
+.error {
+    color: red;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.button {
+    background-color: #000; /* Color negro */
+    color: #fff; /* Texto blanco */
+}
+
+.button[type="submit"]:hover {
+    background-color: #4CAF50; /* Verde al pasar el mouse */
+}
+
+.button[type="reset"]:hover {
+    background-color: #f44336; /* Rojo al pasar el mouse */
+}
+
+.button[href="index.html"]:hover {
+    background-color: #ff6347; /* Naranja al pasar el mouse */
+}

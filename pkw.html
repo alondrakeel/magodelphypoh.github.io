@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWK: pH y pOH</title>
+    <style>
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #fff;
+        }
+        h2 {
+            color: #b0c4de;
+        }
+        .content {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+        }
+        a {
+            color: #004896;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:#1f1f1f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #004896;
+        }
+        .table-container {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        th {
+            background-color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+        .b1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PKW: pH y pOH</h1>
+        </div>
+        <div class="content">
+            <h2>Clasificación de Ácidos y Bases</h2>
+            <p>Los ácidos y las bases se pueden clasificar como fuertes o débiles según su capacidad para disociarse en agua.</p>
+            <h3>Ácidos y Bases Fuertes</h3>
+            <p>Los ácidos y bases fuertes se disocian completamente en solución acuosa. Ejemplos de ácidos fuertes incluyen el ácido clorhídrico (HCl) y el ácido sulfúrico (H<sub>2</sub>SO<sub>4</sub>). Ejemplos de bases fuertes incluyen el hidróxido de sodio (NaOH) y el hidróxido de potasio (KOH).</p>
+            <h3>Ácidos y Bases Débiles</h3>
+            <p>Los ácidos y bases débiles se disocian parcialmente en solución. Ejemplos de ácidos débiles incluyen el ácido acético (CH<sub>3</sub>COOH) y el ácido fórmico (HCOOH). Ejemplos de bases débiles incluyen el amoníaco (NH<sub>3</sub>) y la anilina (C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>).</p>
+        </div>
+        
+        <h3>A continuacion se ejemplificara bases (fuertes o debiles) y acidos (fuertes o debiles) recuerda que entre mas se elejen es decir entre mas cantidad en el caso de bases son mas fuertes, algo similiar sucede con los acidos pero viceversa entre menor cantidad mas acidos.</h3>
+        <h3>Recordemos tambien que si la capacidad de disolucion es exactamente 7 este se considera NEUTRO.</h3>
+        
+            <h2>Tabla de Sorensen</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>pH</th>
+                            <th>[H<sup>+</sup>] (mol/L)</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>Ácido fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1 × 10<sup>-1</sup></td>
+                            <td>Ácido fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1 × 10<sup>-2</sup></td>
+                            <td>Ácido fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1 × 10<sup>-3</sup></td>
+                            <td>Ácido fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>3.5</td>
+                            <td>3.16 × 10<sup>-4</sup></td>
+                            <td>Ácido débil</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>1 × 10<sup>-4</sup></td>
+                            <td>Ácido débil</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>1 × 10<sup>-5</sup></td>
+                            <td>Ácido débil</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>1 × 10<sup>-6</sup></td>
+                            <td>Ácido débil</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>1 × 10<sup>-7</sup></td>
+                            <td>Neutro</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>1 × 10<sup>-8</sup></td>
+                            <td>Base débil</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>1 × 10<sup>-9</sup></td>
+                            <td>Base débil</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1 × 10<sup>-10</sup></td>
+                            <td>Base débil</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>11</td>
+                            <td>1 × 10<sup>-11</sup></td>
+                            <td>Base débil</td>
+                        </tr>
+
+                        <tr>
+                            <td>11.5</td>
+                            <td>3.16 × 10<sup>-12</sup></td>
+                            <td>Base fuerte</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>1 × 10<sup>-12</sup></td>
+                            <td>Base fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>1 × 10<sup>-13</sup></td>
+                            <td>Base fuerte</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>1 × 10<sup>-14</sup></td>
+                            <td>Base fuerte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="b1">
+            <hr>
+        <a href="index.html" class="button">REGRESAR</a>
+            <hr>
+        </div>
+        <div class="footer">
+            <p>Para más información, consulta <a href="https://es.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acids-bases-and-ph-ap/a/ph-poh-and-the-ph-scale">KHAN ACADEMY PH Y POH</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
+
